@@ -1,4 +1,4 @@
-package com.gzy.test;
+package com.gzy.thread;
 
 /**
  * 
