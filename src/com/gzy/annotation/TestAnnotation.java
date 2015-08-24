@@ -3,10 +3,9 @@ package com.gzy.annotation;
 
 public class TestAnnotation {
 	
-	@Test
+	@Test(name = "guozeyuan")
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Test test = (Test)TestAnnotation.class.getAnnotation(Test.class);
+		Test test = (Test)TestAnnotation.class.getMethods()[0].getAnnotation(Test.class);
 		System.out.println(test.name());
 	}
 
